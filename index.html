@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>今彗名刺生成ツール</title>
+
+    <!-- はんなり明朝 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hannari&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>名刺生成ツール</h1>
+
+    <div class="form">
+
+        <label>
+            名前
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="名前を入力"
+            >
+        </label>
+
+        <label>
+            役職
+            <input
+                type="text"
+                id="roleInput"
+                placeholder="役職を入力"
+            >
+        </label>
+
+    </div>
+
+
+    <h2>プレビュー</h2>
+
+    <div class="preview-wrapper">
+
+        <div id="card">
+
+            <img
+                src="meishi.png"
+                id="background"
+                alt="名刺デザイン"
+            >
+
+            <div
+                id="nameText"
+                class="text-object name"
+            >
+                名前
+            </div>
+
+            <div
+                id="roleText"
+                class="text-object role"
+            >
+                役職
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="controls">
+
+        <h2>文字設定</h2>
+
+        <div class="control-group">
+
+            <h3>名前</h3>
+
+            <label>
+                文字サイズ
+
+                <input
+                    type="range"
+                    id="nameSize"
+                    min="10"
+                    max="200"
+                    value="64"
+                >
+
+                <span id="nameSizeValue">
+                    64px
+                </span>
+            </label>
+
+        </div>
+
+
+        <div class="control-group">
+
+            <h3>役職</h3>
+
+            <label>
+                文字サイズ
+
+                <input
+                    type="range"
+                    id="roleSize"
+                    min="10"
+                    max="150"
+                    value="30"
+                >
+
+                <span id="roleSizeValue">
+                    30px
+                </span>
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <div class="download-area">
+
+        <button id="downloadButton">
+            PNGでダウンロード
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
