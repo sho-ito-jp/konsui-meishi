@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px 60px;
+
+    background: #f2f2f2;
+    color: #222;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form label:last-child {
+    margin-bottom: 0;
+}
+
+.form input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   プレビュー
+========================= */
+
+.preview-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    padding: 30px;
+
+    background: #ddd;
+    border-radius: 10px;
+}
+
+#card {
+    position: relative;
+
+    width: 1075px;
+    height: 650px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    user-select: none;
+}
+
+#background {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 1075px;
+    height: 650px;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   名刺の文字
+========================= */
+
+.text-object {
+    position: absolute;
+
+    cursor: move;
+
+    white-space: nowrap;
+
+    user-select: none;
+
+    transform: translate(-50%, -50%);
+
+    font-family: "Hannari", serif;
+
+    color: #000;
+
+    z-index: 10;
+}
+
+.text-object:hover {
+    outline: 1px dashed #888;
+}
+
+
+/* 初期位置 */
+
+.name {
+    left: 537px;
+    top: 280px;
+
+    font-size: 64px;
+
+    font-weight: normal;
+}
+
+.role {
+    left: 537px;
+    top: 350px;
+
+    font-size: 30px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   設定
+========================= */
+
+.controls {
+    margin-top: 30px;
+
+    background: #fff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+.control-group {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.control-group:last-child {
+    border-bottom: none;
+}
+
+.control-group h3 {
+    margin-top: 0;
+}
+
+.control-group label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.control-group input[type="range"] {
+    flex: 1;
+}
+
+
+/* =========================
+   ダウンロード
+========================= */
+
+.download-area {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+button {
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #222;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
